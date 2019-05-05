@@ -1,0 +1,138 @@
+/* Body copy FONT  font-family: 'Open Sans', sans-serif; */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    margin-top: 15px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+a {
+    color: #FFF; 
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover {
+   color: #C9B272;
+    text-decoration: none;
+}
+
+#footer-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+#footer-nav div {
+    justify-content: flex-end; 
+    margin-right: 20px;
+}
+
+#main {
+    width: 100%; 
+    min-height: 100vh;
+    background-image: url(../img/homebg.jpg);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+#main-cont {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(50,50,50,0.4) 0%, rgba(40,40,40,0.7) 100%);
+}
+
+#main-title-cont { 
+    width: 100%;
+    margin: 0;
+}
+
+#main-title {
+    padding: 0;
+}   
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 4.1vw;
+    color: #FFF;
+    width: 90%;
+}
+
+h2 {
+    width: 90%;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #FFF;
+}
+
+hr {
+    display: block;
+    border: solid 1px;
+    width: 100%;
+    color: #C9B272;   
+}
+
+#main-title p {
+    width: 90%;
+    text-align: center;
+}
+
+
+
+/*------------------ MEDIA QUERIES  ----------------------*/
+
+/*------------ up to landscape tablet -----------------*/
+@media only screen and (max-width: 1279px) {
+    
+    h1 {
+     font-size: 5vw;
+    }
+    
+    h2 {
+      font-size: 20px;   
+    }
+}
+
+
+/* ---------- up to portrait tablet -----------------*/
+@media only screen and (max-width: 719px) {
+    
+    h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 16px;  
+        text-align: center;
+    }
+    
+    nav ul {
+        justify-content: center;   
+    }
+    
+    #footer-nav div {
+    justify-content: center; 
+    margin-right: 0px;
+}
+}
