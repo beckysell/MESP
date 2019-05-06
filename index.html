@@ -193,7 +193,7 @@
             new ScrollMagic.Scene({
                     triggerElement: "#fade-out",
                     triggerHook: "onLeave",
-                    duration: "400%"
+                    duration: "500%"
                 })
                 .setPin("#fade-out", {
                     pushFollowers: false
@@ -239,26 +239,48 @@
         //---------------------------USE Anime to fade in #info-cont
 
         jQuery(document).ready(function() {
-            $('#info-cont').waypoint(function() {
+            $('.app-info').waypoint(function() {
                 var CSStransforms = anime({
-                    targets: '#info-cont',
+                    targets: '.app-info',
                     opacity: 1,
                     duration: 1000,
                     easing: 'easeOutExpo'
                 });
             }, {
-                offset: '40%'
+                offset: '50%'
             });
             
-            $('#info-cont').waypoint(function() {
+            $('.app-map').waypoint(function() {
                 var CSStransforms = anime({
-                    targets: '#info-cont',
+                    targets: '.app-map',
+                    opacity: 1,
+                    duration: 1000,
+                    easing: 'easeOutExpo'
+                });
+            }, {
+                offset: '50%'
+            });
+            
+            $('.app-info').waypoint(function() {
+                var CSStransforms = anime({
+                    targets: '.app-info',
                     opacity: 0,
                     duration: 1000,
                     easing: 'easeOutExpo'
                 });
             }, {
-                offset: '-60%'
+                offset: '-30%'
+            });
+            
+            $('.app-map').waypoint(function() {
+                var CSStransforms = anime({
+                    targets: '.app-map',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: 'easeOutExpo'
+                });
+            }, {
+                offset: '-30%'
             });
             
             // -------- FADE in and out #social-cont
