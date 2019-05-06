@@ -190,6 +190,7 @@
      background-repeat: no-repeat;
      background-size: cover;
      overflow: hidden;
+     z-index: -10;
  }
 
  #dr-cont {
@@ -209,6 +210,42 @@
      font-size: 22px;
      margin-bottom: 30px;
  }
+
+/*--------------- 7 Implicit test --------------*/
+#implicit {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(112,112,112,0) 0%, rgba(11,13,11,1) 100%);
+}
+
+#implicit-link {
+     width: 40%;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+#implicit-link p {
+    color: rgba(112,112,112,1); 
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+#implicit-btn {
+    margin-top: 20px;
+    background-color: #C9B272;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#implicit-btn:hover {
+    background-color: #FFF;
+    color: #C9B272;
+    border: 1px solid #C9B272;
+}
 
 
 
@@ -274,6 +311,12 @@
      h5 {
          font-size: 26px;
      }
+     
+     #implicit-link {
+     width: 70%;
+    background-color: #FFF;
+    padding: 20px;
+}
  }
 
  /* ---------- small phones -----------------*/
