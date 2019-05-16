@@ -283,6 +283,38 @@
      background: rgba(72,71,71,.5); 
  }
 
+.training {
+    width: 60%;  
+    margin-bottom: 30px;
+}
+
+.training-title {
+    margin-bottom: 30px;   
+}
+
+.time {
+    font-style:italic;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.traininglink  {
+    width: 60%;   
+}
+
+.training-btn {
+    background-color: #C9B272;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.training-btn:hover {
+    background-color: #FFF;
+    color: #C9B272;
+    border: 1px solid #C9B272;
+}
 
 
  /*------------------ MEDIA QUERIES  ----------------------*/
