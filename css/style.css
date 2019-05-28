@@ -11,9 +11,9 @@
      color: #FFF;
  }
 
-#fixed-cont {
-    width: 100%;   
-}
+ #fixed-cont {
+     width: 100%;
+ }
 
  nav {
      position: absolute;
@@ -196,7 +196,7 @@
  #dr-cont {
      width: 100%;
      min-height: 100vh;
-     background: linear-gradient(180deg, rgba(50, 50, 50, 0.4) 0%, rgba(30,30,30,0.9) 100%);
+     background: linear-gradient(180deg, rgba(50, 50, 50, 0.4) 0%, rgba(30, 30, 30, 0.9) 100%);
  }
 
  /*--------------- 6 Dr text ----------------*/
@@ -211,44 +211,44 @@
      margin-bottom: 30px;
  }
 
-/*--------------- 7 Implicit test --------------*/
-#implicit {
-    width: 100%;
-    min-height: 100vh;
-}
+ /*--------------- 7 Implicit test --------------*/
+ #implicit {
+     width: 100%;
+     min-height: 100vh;
+ }
 
-#implicit-link {
+ #implicit-link {
      width: 40%;
-    background-color: #FFF;
-    padding: 20px;
-    z-index: 10;
-}
+     background-color: #FFF;
+     padding: 20px;
+     z-index: 10;
+ }
 
-#implicit-link p {
-    color: rgba(112,112,112,1); 
-    font-family: Georgia, serif;
-    font-size: 16px;
-    text-align: center;
-    margin: 0;
-}
+ #implicit-link p {
+     color: rgba(112, 112, 112, 1);
+     font-family: Georgia, serif;
+     font-size: 16px;
+     text-align: center;
+     margin: 0;
+ }
 
-#implicit-btn {
-    margin-top: 20px;
-    background-color: #C9B272;
-    height: 60px;
-    padding-top: 20px;
-    text-align: center;
-    transition: 0.5s;
-}
+ #implicit-btn {
+     margin-top: 20px;
+     background-color: #C9B272;
+     height: 60px;
+     padding-top: 20px;
+     text-align: center;
+     transition: 0.5s;
+ }
 
-#implicit-btn:hover {
-    background-color: #FFF;
-    color: #C9B272;
-    border: 1px solid #C9B272;
-}
+ #implicit-btn:hover {
+     background-color: #FFF;
+     color: #C9B272;
+     border: 1px solid #C9B272;
+ }
 
 
-/*------------------ 8 LINKS TO TRAINING -------------------*/
+ /*------------------ 8 LINKS TO TRAINING -------------------*/
  #lm {
      width: 100%;
      background-image: url(../img/lmtraining.jpg);
@@ -260,10 +260,10 @@
      margin-right: 3px;
  }
 
-#lm-cont {
+ #lm-cont {
      width: 100%;
      min-height: 100vh;
-     background: rgba(72,71,71,.5); 
+     background: rgba(72, 71, 71, .5);
  }
 
  #des {
@@ -272,49 +272,49 @@
      background-position: top;
      background-size: cover;
      overflow: hidden;
-     margin:0;
+     margin: 0;
      padding: 0;
      margin-left: 3px;
  }
 
-#des-cont {
+ #des-cont {
      width: 100%;
      min-height: 100vh;
-     background: rgba(72,71,71,.5); 
+     background: rgba(72, 71, 71, .5);
  }
 
-.training {
-    width: 60%;  
-    margin-bottom: 30px;
-}
+ .training {
+     width: 60%;
+     margin-bottom: 30px;
+ }
 
-.training-title {
-    margin-bottom: 30px;   
-}
+ .training-title {
+     margin-bottom: 30px;
+ }
 
-.time {
-    font-style:italic;
-    margin-bottom: 0;
-    margin-top: 50px;
-}
+ .time {
+     font-style: italic;
+     margin-bottom: 0;
+     margin-top: 50px;
+ }
 
-.traininglink  {
-    width: 60%;   
-}
+ .traininglink {
+     width: 60%;
+ }
 
-.training-btn {
-    background-color: #C9B272;
-    height: 40px;
-    padding-top: 10px;
-    text-align: center;
-    transition: 0.5s;
-}
+ .training-btn {
+     background-color: #C9B272;
+     height: 40px;
+     padding-top: 10px;
+     text-align: center;
+     transition: 0.5s;
+ }
 
-.training-btn:hover {
-    background-color: #FFF;
-    color: #C9B272;
-    border: 1px solid #C9B272;
-}
+ .training-btn:hover {
+     background-color: #FFF;
+     color: #C9B272;
+     border: 1px solid #C9B272;
+ }
 
 
  /*------------------ MEDIA QUERIES  ----------------------*/
@@ -379,20 +379,20 @@
      h5 {
          font-size: 26px;
      }
-     
-     #implicit-link {
-     width: 70%;
-    background-color: #FFF;
-    padding: 20px;
-}
-     
-      #lm {
-     margin-right: 0px;
- }
 
- #des {
-     margin-left: 0px;
- }
+     #implicit-link {
+         width: 70%;
+         background-color: #FFF;
+         padding: 20px;
+     }
+
+     #lm {
+         margin-right: 0px;
+     }
+
+     #des {
+         margin-left: 0px;
+     }
  }
 
  /* ---------- small phones -----------------*/

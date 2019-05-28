@@ -9,7 +9,7 @@
     <meta name="author" content="Ohio University">
 
     <title>MESP</title>
-    
+
     <link rel="icon" href="img/favicon.jpg" type="image" sizes="16x16">
 
     <!-- Bootstrap core CSS -->
@@ -112,66 +112,72 @@
 
         </div>
     </section>
-    
+
     <!-- 7 IMPLICIT BIAS TEST LINK -->
     <section id="implicit" class="d-flex justify-content-center align-items-center">
         <div id="implicit-link" class="row d-flex flex-column align-items-center justify-content-center">
             <div class="col-xl-9">
                 <p>
-                Before beginning this training, please take a moment to learn about your own hidden biases.</p>
+                    Before beginning this training, please take a moment to learn about your own hidden biases.</p>
             </div>
-            
-            <a href="https://implicit.harvard.edu/implicit/user/pimh/index.jsp" target="_blank" class="col-xl-6"><div id="implicit-btn">
-                Implicit Association Test
-                </div></a>
-        
+
+            <a href="https://implicit.harvard.edu/implicit/user/pimh/index.jsp" target="_blank" class="col-xl-6">
+                <div id="implicit-btn">
+                    Implicit Association Test
+                </div>
+            </a>
+
         </div>
-        
+
     </section>
-    
-    
+
+
     <!-- 8 Links to training -->
     <section id="training" class="container-fluid">
         <div class="row">
             <div id="lm" class="col-12 col-md">
                 <div id="lm-cont" class="d-flex justify-content-center align-items-end">
                     <div class="training">
-                    <div class="training-title">
-                    <h5>Training I:</h5>
-                    <h5>Diabetes in Appalachia</h5>
+                        <div class="training-title">
+                            <h5>Training I:</h5>
+                            <h5>Diabetes in Appalachia</h5>
                         </div><!-- close .training-title -->
-                    <p>Lula Mae is a 72-year-old grandmother who has lived with type 2 diabetes for 22 years. </p>
-                    
-                    <div class="traininglink">
-                        <p class="time">Total time: 60 minutes</p>
-                    <a href="https://implicit.harvard.edu/implicit/user/pimh/index.jsp" target="_blank"><div class="training-btn">
-                Begin Training I
-                </div></a>
-                    </div> <!-- close traininglink -->
-                    
-                    </div> <!-- close .training --> 
-                </div> <!-- close #lm-cont -->     
+                        <p>Lula Mae is a 72-year-old grandmother who has lived with type 2 diabetes for 22 years. </p>
+
+                        <div class="traininglink">
+                            <p class="time">Total time: 60 minutes</p>
+                            <a href="training1.html" target="_blank">
+                                <div class="training-btn">
+                                    Begin Training I
+                                </div>
+                            </a>
+                        </div> <!-- close traininglink -->
+
+                    </div> <!-- close .training -->
+                </div> <!-- close #lm-cont -->
             </div> <!-- close #lm -->
             <div id="des" class="col-12 col-md">
                 <div id="des-cont" class="d-flex justify-content-center align-items-end">
-                <div class="training">
-                    <div class="training-title">
-                    <h5>Training II:</h5>
-                    <h5>Living with Addiction</h5>
+                    <div class="training">
+                        <div class="training-title">
+                            <h5>Training II:</h5>
+                            <h5>Living with Addiction</h5>
                         </div><!-- close .training-title -->
-                    <p>Destiny is a 23-year-old pregnant woman attempting to overcome her struggle with addiction to opioids.</p>
-                    
-                    <div class="traininglink">
-                        <p class="time">Total time: 60 minutes</p>
-                    <a href="https://implicit.harvard.edu/implicit/user/pimh/index.jsp" target="_blank"><div class="training-btn">
-                Begin Training II
-                </div></a>
-                    </div> <!-- close traininglink -->
-                    
-                    </div> <!-- close .training --> 
+                        <p>Destiny is a 23-year-old pregnant woman attempting to overcome her struggle with addiction to opioids.</p>
+
+                        <div class="traininglink">
+                            <p class="time">Total time: 60 minutes</p>
+                            <a href="https://implicit.harvard.edu/implicit/user/pimh/index.jsp" target="_blank">
+                                <div class="training-btn">
+                                    Begin Training II
+                                </div>
+                            </a>
+                        </div> <!-- close traininglink -->
+
+                    </div> <!-- close .training -->
                 </div> <!-- close #des-cont -->
             </div> <!-- close #des -->
-           
+
         </div>
     </section>
 
@@ -257,7 +263,7 @@
                     pushFollowers: true
                 })
                 .addTo(controller);
-            
+
             //-----------PIN social determinents
             new ScrollMagic.Scene({
                     triggerElement: "#social-cont",
@@ -268,7 +274,7 @@
                     pushFollowers: true
                 })
                 .addTo(controller);
-            
+
             //-----------PIN #drimg
             new ScrollMagic.Scene({
                     triggerElement: "#drimg",
@@ -295,7 +301,7 @@
             }, {
                 offset: '50%'
             });
-            
+
             $('.app-map').waypoint(function() {
                 var CSStransforms = anime({
                     targets: '.app-map',
@@ -306,7 +312,7 @@
             }, {
                 offset: '50%'
             });
-            
+
             $('.app-info').waypoint(function() {
                 var CSStransforms = anime({
                     targets: '.app-info',
@@ -317,7 +323,7 @@
             }, {
                 offset: '-30%'
             });
-            
+
             $('.app-map').waypoint(function() {
                 var CSStransforms = anime({
                     targets: '.app-map',
@@ -328,7 +334,7 @@
             }, {
                 offset: '-30%'
             });
-            
+
             // -------- FADE in and out #social-cont
             $('#social-cont').waypoint(function() {
                 var CSStransforms = anime({
@@ -340,7 +346,7 @@
             }, {
                 offset: '40%'
             });
-            
+
             $('#social-cont').waypoint(function() {
                 var CSStransforms = anime({
                     targets: '#social-cont',
@@ -351,7 +357,7 @@
             }, {
                 offset: '-60%'
             });
-            
+
             // -------- FADE in and out #dr-text
             $('#dr-text').waypoint(function() {
                 var CSStransforms = anime({
@@ -363,7 +369,7 @@
             }, {
                 offset: '20%'
             });
-            
+
             $('#dr-text').waypoint(function() {
                 var CSStransforms = anime({
                     targets: '#dr-text',
@@ -377,4 +383,6 @@
         });
     </script>
 
-</body></html>
+</body>
+
+</html>
