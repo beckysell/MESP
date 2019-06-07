@@ -166,6 +166,21 @@
      border-top: 2px solid #C9B272;
  }
 
+.app-map-key {
+    margin-top: 10px;   
+}
+.app-map-key img {
+    border: none;   
+}
+
+.app-map-key p {
+    font-size: 9px;  
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+
 
  /*----------------- 4 SOCIAL DETERMINANTS ---------------*/
  #social-cont {

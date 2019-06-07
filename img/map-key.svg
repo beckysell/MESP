@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="638" height="24" viewBox="0 0 638 24">
+  <g id="Group_218" data-name="Group 218" transform="translate(-973 -2061)">
+    <g id="Group_217" data-name="Group 217">
+      <g id="Rectangle_1167" data-name="Rectangle 1167" transform="translate(973 2061)" fill="#fff" stroke="#707070" stroke-width="1">
+        <rect width="24" height="24" stroke="none"/>
+        <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+      </g>
+      <text id="Appalachian_Ohio" data-name="Appalachian Ohio" transform="translate(1006 2080)" fill="#fff" font-size="16" font-family="OpenSans, Open Sans"><tspan x="0" y="0">Appalachian Ohio</tspan></text>
+    </g>
+    <g id="Group_215" data-name="Group 215" transform="translate(189 -45)">
+      <g id="Rectangle_1168" data-name="Rectangle 1168" transform="translate(973 2106)" fill="#c9b272" stroke="#707070" stroke-width="1">
+        <rect width="24" height="24" stroke="none"/>
+        <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+      </g>
+      <text id="Ohio_at-risk_counties" data-name="Ohio “at-risk” counties" transform="translate(1006 2125)" fill="#fff" font-size="16" font-family="OpenSans, Open Sans"><tspan x="0" y="0">Ohio “at-risk” counties</tspan></text>
+    </g>
+    <g id="Group_216" data-name="Group 216" transform="translate(410 -90)">
+      <g id="Rectangle_1169" data-name="Rectangle 1169" transform="translate(973 2151)" fill="#de7550" stroke="#707070" stroke-width="1">
+        <rect width="24" height="24" stroke="none"/>
+        <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+      </g>
+      <text id="Ohio_distressed_counties" data-name="Ohio “distressed” counties" transform="translate(1006 2170)" fill="#fff" font-size="16" font-family="OpenSans, Open Sans"><tspan x="0" y="0">Ohio “distressed” counties</tspan></text>
+    </g>
+  </g>
+</svg>
