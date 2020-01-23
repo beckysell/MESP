@@ -1,33 +1,125 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A team from Ohio University produced The Medicaid Equity Simulation Project: A virtual reality training experience to advance health equity through cultural competency.">
+    <meta name="author" content="Ohio University">
 
-    <title>Training I: Diabetes is Appalachia</title>
+    <title>MESP: Training I</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="icon" href="img/favicon.jpg" type="image" sizes="16x16">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+
 </head>
 
-
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <section><h1>Slide 1</h1></section>
-            <section><h3>Slide 2</h3></section>
-            <section><h3>Slide 3</h3></section>
-            <section><h3>Slide 4</h3></section>
+    
+    <div id="surveyModal" class="modal">
+        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+    <div id="surveyWindow" class="surveybg">
+        <span class="close">&times;</span>
+        <div id="survey-text" class="d-flex flex-column justify-content-center align-items-center">
+        <p>Please help us evaluate this new training,
+            <br>
+            <span class="title-text">Diabetes in Appalachia: 
+                <br>Lula Mae Virtual Reality Simulation (Ohio University)</span>
+            <br>
+            by filling out this survey before and after the experience.
+            </p>
+            
+            <a href="https://osu.az1.qualtrics.com/jfe/form/SV_db8Ju14omu15mnP" target="_blank">
+                            <div class="training-btn">
+                                Ohio Department of Medicaid Survey
+                            </div>
+                        </a>
+            
+        </div> <!-- close #survey-text -->
+    </div> <!-- close #survey-overlay -->
+        </div> 
+    </div> <!-- close #survey-window -->
+
+    <div id="fixed-cont">
+        <!-- Navigation -->
+        <nav>
+            <ul class="d-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">THE SIMULATIONS
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT THE TRAINING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">References &amp; Resources</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div id="footer-nav" class="d-flex flex-column">
+
+            <div class="d-flex justify-content-md-end justify-content-sm-center">
+                <a href="http://www.ohio.edu" target="_blank">&copy; 2019 A project by Ohio University</a>
+            </div>
         </div>
-    </div>
 
-    <script src="js/reveal.js" type="text/javascript"></script>
+        <!-- LANDING PAGE -->
+        <section id="lm-main">
+            <div class="d-flex align-items-center" id="lm-main-cont">
+                <div class="row d-flex justify-content-center align-items-center" id="lm-main-title-cont">
+                    <div class="d-flex justify-content-start align-items-start flex-column" id="lm-main-title">
+                        <h1><span>Welcome to Training I:</span>Diabetes in Appalachia</h1>
+                        <hr>
 
+                        <p>Diabetes is a devastating disease that affects more than 30 million Americans. Suboptimal glycemic control is associated with severe microvascular (retinopathy, neuropathy, nephropathy) and microvascular complications (coronary artery disease, peripheral arterial disease, and stroke).</p>
+
+                        <p>Due to socioeconomic, cultural and healthcare access factors, diabetes rates are double the national average in the Appalachian region of Southeast Ohio.</p>
+
+                        <a href="training1-lulamae.html">
+                            <div class="training-btn">
+                                Meet Lula Mae >
+                            </div>
+                        </a>
+                    </div> <!-- close #lm-main-title -->
+                </div> <!-- close #lm-main-title-cont -->
+
+                <div id="lm-main-img">
+                    <img src="img/lm/lm-intro/tester.jpg" alt="Lula Mae uses a blood tester to check her sugar.">
+                </div> <!-- close #lm-main-img -->
+            </div> <!-- close #lm-main-cont -->
+        </section> <!-- close #lm-main -->
+    </div> <!-- close #fixed-cont -->
+    
     <script>
-        Reveal.initialize({});
-    </script>
-</body>
+// Get the modal
+var modal = document.getElementById("surveyModal");
 
+// Get the close btn
+var span = document.getElementsByClassName("close")[0];
+        
+// Close modal when user clicks X btn
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    modal.style.display = "none";
+}
+</script>
+    
+    </body>
+    
+    
 </html>

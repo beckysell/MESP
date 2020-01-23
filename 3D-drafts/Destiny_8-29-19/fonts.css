@@ -1,0 +1,6 @@
+@font-face {
+   font-family: "Open Sans Semibold";
+   src: url("fonts/Open Sans Semibold.eot") format("embedded-opentype"), url("fonts/Open Sans Semibold.ttf") format("truetype"), url("fonts/Open Sans Semibold.woff") format("woff"), url("fonts/Open Sans Semibold.svg") format("svg");
+   font-weight: bold;
+   font-style: normal;
+}

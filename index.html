@@ -30,17 +30,31 @@
         <nav>
             <ul class="d-flex">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">THE SIMULATIONS
+                    <a class="nav-link" href="#simulations">The Simulations
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT THE TRAINING</a>
+                    <a class="nav-link" href="#">About the Project</a>
                 </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle shadow-none" type="button" data-toggle="dropdown">References &amp; Resources</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Training I: Diabetes</a></li>
+                            <li><a href="#">Training II: Opioids</a></li>
+                        </ul><!-- close .dropdown-content -->
+                    </div> <!-- close .dropdown -->
+                </li>
+
             </ul>
         </nav>
 
-        <div id="footer-nav">
-            <div class="d-flex">
+        <div id="footer-nav" class="d-flex flex-column">
+            <div class="d-flex scroll">
+                <img src="img/scroll.svg" alt="Scroll down direction to begin training.">
+            </div>
+
+            <div class="d-flex justify-content-md-end justify-content-sm-center">
                 <a href="http://www.ohio.edu" target="_blank">&copy; 2019 A project by Ohio University</a>
             </div>
         </div>
@@ -78,13 +92,14 @@
 
             <div class="col-lg-6 col-12 app-map">
                 <img src="img/map.png" alt="Map of the regions of Appalachia from the Appalachian Regional Council, including North Central Appalachia, which includes Southeast Ohio">
-                
+
                 <div class="row d-flex flex-column app-map-key">
-                <div class="col-10">
-                    <img src="img/map-key.svg" alt="Map key of Appalachian Ohio counties, including distressed and at-risk designations.">
+                    <div class="col-10">
+                        <img src="img/map-key.svg" alt="Map key of Appalachian Ohio counties, including distressed and at-risk designations.">
                     </div> <!-- close col -->
-                <div class="col">
-                    <p><a href="https://www.arc.gov/research/MapsofAppalachia.asp?MAP_ID=148" target="_blank">Information from Appalachian Regional Commission, August 2018</a></p></div>
+                    <div class="col">
+                        <p><a href="https://www.arc.gov/research/MapsofAppalachia.asp?MAP_ID=148" target="_blank">Information from Appalachian Regional Commission, August 2018</a></p>
+                    </div>
                 </div> <!-- close row -->
             </div> <!-- close .app-map -->
         </div> <!-- close .app-cont -->
@@ -142,6 +157,7 @@
 
     <!-- 8 Links to training -->
     <section id="training" class="container-fluid">
+        <a name="simulations" id="sim-link"></a>
         <div class="row">
             <div id="lm" class="col-12 col-md">
                 <div id="lm-cont" class="d-flex justify-content-center align-items-end">
@@ -154,7 +170,7 @@
 
                         <div class="traininglink">
                             <p class="time">Total time: 60 minutes</p>
-                            <a href="training1.html" target="_blank">
+                            <a href="training1.html" target="_self">
                                 <div class="training-btn">
                                     Begin Training I
                                 </div>
@@ -175,7 +191,7 @@
 
                         <div class="traininglink">
                             <p class="time">Total time: 60 minutes</p>
-                            <a href="https://implicit.harvard.edu/implicit/user/pimh/index.jsp" target="_blank">
+                            <a href="#" target="_self">
                                 <div class="training-btn">
                                     Begin Training II
                                 </div>
@@ -186,6 +202,11 @@
                 </div> <!-- close #des-cont -->
             </div> <!-- close #des -->
 
+        </div>
+        
+        <div id="desktop-view">
+            <h4>This training is best viewed on a computer or tablet.</h4>
+            <p>Please switch to a larger screen to have the best experience.</p>
         </div>
     </section>
 
@@ -265,7 +286,7 @@
             new ScrollMagic.Scene({
                     triggerElement: "#info-cont",
                     triggerHook: "onLeave",
-                    duration: "50%"
+                    duration: "70%"
                 })
                 .setPin("#info-cont", {
                     pushFollowers: true
@@ -299,49 +320,49 @@
         //---------------------------USE Anime to fade in #info-cont
 
         jQuery(document).ready(function() {
-            $('.app-info').waypoint(function() {
-                var CSStransforms = anime({
-                    targets: '.app-info',
-                    opacity: 1,
-                    duration: 1000,
-                    easing: 'easeOutExpo'
-                });
-            }, {
-                offset: '50%'
-            });
+            /* $('.app-info').waypoint(function() {
+                 var CSStransforms = anime({
+                     targets: '.app-info',
+                     opacity: 1,
+                     duration: 1000,
+                     easing: 'easeOutExpo'
+                 });
+             }, {
+                 offset: '50%'
+             });
 
-            $('.app-map').waypoint(function() {
-                var CSStransforms = anime({
-                    targets: '.app-map',
-                    opacity: 1,
-                    duration: 1000,
-                    easing: 'easeOutExpo'
-                });
-            }, {
-                offset: '50%'
-            });
+             $('.app-map').waypoint(function() {
+                 var CSStransforms = anime({
+                     targets: '.app-map',
+                     opacity: 1,
+                     duration: 1000,
+                     easing: 'easeOutExpo'
+                 });
+             }, {
+                 offset: '50%'
+             }); 
 
-            $('.app-info').waypoint(function() {
-                var CSStransforms = anime({
-                    targets: '.app-info',
-                    opacity: 0,
-                    duration: 1000,
-                    easing: 'easeOutExpo'
-                });
-            }, {
-                offset: '-30%'
-            });
+             $('.app-info').waypoint(function() {
+                 var CSStransforms = anime({
+                     targets: '.app-info',
+                     opacity: 0,
+                     duration: 1000,
+                     easing: 'easeOutExpo'
+                 });
+             }, {
+                 offset: '-30%'
+             });
 
-            $('.app-map').waypoint(function() {
-                var CSStransforms = anime({
-                    targets: '.app-map',
-                    opacity: 0,
-                    duration: 1000,
-                    easing: 'easeOutExpo'
-                });
-            }, {
-                offset: '-30%'
-            });
+             $('.app-map').waypoint(function() {
+                 var CSStransforms = anime({
+                     targets: '.app-map',
+                     opacity: 0,
+                     duration: 1000,
+                     easing: 'easeOutExpo'
+                 });
+             }, {
+                 offset: '-30%'
+             }); */
 
             // -------- FADE in and out #social-cont
             $('#social-cont').waypoint(function() {
@@ -391,6 +412,4 @@
         });
     </script>
 
-</body>
-
-</html>
+</body></html>
