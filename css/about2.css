@@ -1,4 +1,26 @@
  /* Body copy FONT  font-family: 'Open Sans', sans-serif; */
+.less-padding {
+    padding-right: 0px;
+    padding-left: 0px
+}
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.logos {
+  padding: 25px;
+  color: #FFF
+}
+
+.margin-more {
+    margin-top: 100px;
+}
+
 
  body {
      margin: 0;
@@ -7,8 +29,8 @@
 
  body p {
      font-family: 'Open Sans', sans-serif;
-     font-size: 16px;
-     color: #FFF;
+     font-size: 12px;
+     color: #d3d3d3;
  }
 
  #fixed-cont {
@@ -22,10 +44,29 @@
 
  nav ul {
      width: 100%;
-     margin-top: 15px;
+     margin-top: 12px;
      list-style: none;
      justify-content: flex-end;
  }
+
+ ul {
+     width: 100%;
+     font-size: 14px;
+     line-height: 20px;
+     margin-top: 14px;
+     list-style: none;
+     justify-content: flex-end;
+     -webkit-columns: 2;
+        -moz-columns: 2;
+             columns: 2;
+     padding-left: 0;
+     color: #FFF;
+ }
+
+body {
+    background-color: #354236;
+}
+
 
  a {
      color: #FFF;
@@ -40,6 +81,8 @@
      text-decoration: none;
  }
 
+
+/* INSERT NAV BUTTON STYLE */
 .btn {
     color: #fff;
     font-size: 12px;
@@ -88,6 +131,7 @@
      margin-right: 0px;
  }
 
+
  #footer-nav {
      position: absolute;
      width: 100%;
@@ -96,18 +140,13 @@
  }
 
  #footer-nav div {
-     justify-content: center;
+     justify-content: flex-end;
      margin-right: 20px;
- }
-
- .scroll img {
-     width: 400px;
-     margin-bottom: 10px
  }
 
  #main {
      width: 100%;
-     background-image: url(../img/homebg.jpg);
+     background-color: #535E54;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -117,7 +156,7 @@
  #main-cont {
      width: 100%;
      min-height: 100vh;
-     background: radial-gradient(circle, rgba(50, 50, 50, 0.4) 0%, rgba(40, 40, 40, 0.7) 100%);
+     background-color: #354236;
  }
 
  #main-title-cont {
@@ -130,8 +169,8 @@
  }
 
  h1 {
-     font-family: Georgia, serif;
-     font-size: 64px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 60px;
      color: #FFF;
      margin-bottom: 0;
      display: flex;
@@ -139,9 +178,17 @@
  }
 
  h1 span {
-     font-family: Georgia, serif;
+     font-family: 'Open Sans', sans-serif;
      font-style: italic;
-     font-size: 22px;
+     font-size: 20px;
+     color: #FFF;
+     margin-bottom: 0;
+ }
+
+ ul span {
+     font-family: 'Open Sans', sans-serif;
+     font-style: italic;
+     font-size: 12px;
      color: #FFF;
      margin-bottom: 0;
  }
@@ -154,16 +201,10 @@
  }
 
  #main-title p {
-     text-align: center;
+     text-align: left;
      font-size: 20px;
  }
 
- /*------------ Main 2fade-out --------------*/
- #fade-out {
-     width: 100%;
-     min-height: 100vh;
-     background: radial-gradient(circle, rgba(83, 94, 84, 1) 0%, rgba(28, 36, 29, 1) 79%);
- }
 
 
  /*---------- Appalachia Info & Map -------------*/
@@ -180,11 +221,11 @@
      margin: 0;
      margin-bottom: 30px;
      padding: 0;
-     /*opacity: 0;*/
+     opacity: 0;
  }
 
  h3 {
-     font-family: Georgia, serif;
+     font-family: 'Open Sans', sans-serif;
      font-style: italic;
      font-size: 24px;
      color: #FFF;
@@ -193,7 +234,7 @@
  }
 
  h4 {
-     font-family: Georgia, serif;
+     font-family: 'Open Sans', sans-serif;
      font-size: 48px;
      color: #FFF;
      margin-left: 30px;
@@ -210,7 +251,7 @@
      margin: 0;
      padding: 0;
      min-height: 100%;
-     /*opacity: 0;*/
+     opacity: 0;
  }
 
  .app-map img {
@@ -219,19 +260,36 @@
      border-top: 2px solid #C9B272;
  }
 
- .app-map-key {
-     margin-top: 10px;
- }
+.app-map-key {
+    margin-top: 10px;
+}
+.app-map-key img {
+    border: none;
+}
 
- .app-map-key img {
-     border: none;
- }
+.app-map-key p {
+    font-size: 9px;
+    font-style: italic;
+    margin-top: 5px;
+}
 
- .app-map-key p {
-     font-size: 9px;
-     font-style: italic;
-     margin-top: 5px;
- }
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+    margin: 0px;
+}
+
+</style>
 
 
 
@@ -243,16 +301,11 @@
      opacity: 0;
  }
 
- h5 {
-     font-family: Georgia, serif;
-     font-size: 30px;
-     color: #FFF;
-     margin: 0px;
- }
+
 
 
  /*---------------- 5 Dr Image ---------------------*/
- #drimg {
+ /* #drimg {
      width: 100%;
      background-image: url(../img/homedr.jpg);
      background-position: center;
@@ -266,10 +319,10 @@
      width: 100%;
      min-height: 100vh;
      background: linear-gradient(180deg, rgba(50, 50, 50, 0.4) 0%, rgba(30, 30, 30, 0.9) 100%);
- }
+ } */
 
  /*--------------- 6 Dr text ----------------*/
- #dr-text {
+ /* #dr-text {
      width: 100%;
      min-height: 100vh;
      opacity: 0;
@@ -278,10 +331,10 @@
  #dr-text h5 {
      font-size: 22px;
      margin-bottom: 30px;
- }
+ } */
 
  /*--------------- 7 Implicit test --------------*/
- #implicit {
+ /* #implicit {
      width: 100%;
      min-height: 100vh;
  }
@@ -295,7 +348,7 @@
 
  #implicit-link p {
      color: rgba(112, 112, 112, 1);
-     font-family: Georgia, serif;
+     font-family: 'Open Sans', sans-serif;
      font-size: 16px;
      text-align: center;
      margin: 0;
@@ -314,7 +367,7 @@
      background-color: #FFF;
      color: #C9B272;
      border: 1px solid #C9B272;
- }
+ } */
 
 
  /*------------------ 8 LINKS TO TRAINING -------------------*/
@@ -372,12 +425,10 @@
  }
 
  .training-btn {
-     background-color: #C9B272;
-     height: auto;
+     background-color: #354236;
+     height: 40px;
      padding-top: 10px;
-     padding-bottom: 10px;
      text-align: center;
-     border: 1px solid #C9B272;
      transition: 0.5s;
  }
 
@@ -386,173 +437,6 @@
      color: #C9B272;
      border: 1px solid #C9B272;
  }
-
-#desktop-view {
-        display: none;   
-     }
-
- /*------------------- LULA MAE TRAINING INTRO ----------------------*/
-.modal {
-    width:100%;
-    height: 100vh;
-    position: absolute;
-    display: block;
-    background-color:rgba(0,0,0,.7);
-}
-
-.surveybg {
-    position: absolute;
-    width: 80%;
-    height: 80vh;
-    background-color: #FFF;
-    z-index: 100;
-}
-
-.close {
-    position: absolute;
-    right: 30px;
-    top: 10px;
-    font-size: 60px;
-    color: #808080;
-    display: block;
-}
-
-.close:hover {
-    color: #C9B272;
-    cursor: pointer;
-}
-
-#survey-text {
-    width: 100%;
-    height: 100%;
-}
-
-#survey-text p {
-      color: rgba(112, 112, 112, 1);
-     font-family: Georgia, serif;
-     font-size: 20px;
-     text-align: center;
-     margin: 0; 
-}
-
-#survey-text a {
-    width: 30%;
-    margin-top: 20px;
-}
-
-.title-text {
-    font-weight: 600;   
-    font-size: 24px;
-}
-
- #lm-main {
-     width: 100%;
-     background-color: #535E54;
-     margin: 0;
- }
-
- #lm-main-cont {
-     width: 100%;
-     min-height: 100vh;
-     margin: 0;
- }
-
- #lm-main-title-cont {
-     width: 100%;
-     margin: 0px;
-     padding: 0px;
- }
-
- #lm-main-title {
-     padding: 0px;
-     margin-left: 100px;
-     margin-right: 0px;
- }
-
- #lm-main-title h1 {
-     font-size: 50px;
-     width: 100%;
- }
-
- #lm-main-title h1 span {
-     font-size: 20px;
- }
-
- #lm-main-title p {
-     width: 80%;
-     line-height: 1.8em;
- }
-
- #lm-main-title a {
-     width: 150px;
-     height: 70px;
-     margin-top: 30px
- }
-
- #lm-main-img {
-     height: 100vh;
-     overflow: hidden;
-     border-left: 3px solid #C9B272;
- }
-
- #lm-main-img img {
-     width: 100%;
-     object-fit: cover;
- }
-
- /* ON LULA MAE INTRO */
-
- #lm-img {
-     height: 100vh;
-     overflow: hidden;
-     width: 50%;
-     margin-left: 15%;
- }
-
- #lm-img img {
-     min-width: 100%;
-     max-height: 70vh;
-     object-fit: cover;
-     border: solid 2px #C9B272;
- }
-
- #lm-text {
-     width: 100%;
-     margin: 0px;
-     padding: 0px;
- }
-
- #lm-about-title {
-     padding: 0px;
-     margin-left: 0px;
-     margin-right: 0px;
-     width: 90%;
- }
-
- #lm-about-title h1 {
-     font-size: 50px;
-     width: 60%;
-     margin-left: 70px;
- }
-
- #lm-about-title p {
-     width: 60%;
-     line-height: 1.8em;
-     margin-left: 70px;
- }
-
- #lm-about-title a {
-     width: 320px;
-     margin-top: 30px;
-     margin-left: 70px;
- }
-
-.backlink a {
-    font-style: italic; 
-    font-weight: 300;
-    width: 60%;
-    margin-left: 70px;
-}
 
 
  /*------------------ MEDIA QUERIES  ----------------------*/
@@ -588,6 +472,10 @@
          justify-content: center;
      }
 
+light-footer {
+  background-color: #FFF
+  font-color: #000
+}
      #footer-nav div {
          justify-content: center;
          margin-right: 0px;
@@ -604,13 +492,11 @@
          padding: 0;
          min-height: 100%;
          display: flex;
-         flex-direction: column;
          justify-content: center;
-         align-items: center;
      }
 
      .app-map img {
-         width: 100%;
+         width: 90%;
          align-self: center;
          border-left: 2px solid #C9B272;
          border-top: 2px solid #C9B272;
@@ -633,69 +519,6 @@
      #des {
          margin-left: 0px;
      }
-     
-     #lm-main-cont {
-        display: flex;
-         flex-direction: column;
-     }
-     
-      #lm-img {
-     margin-left: 0;
-     }
-     
-     #training {
-        position: relative; 
-         margin: 0;
-         padding: 0;
-         display: flex;
-         justify-content: center;
-         overflow: hidden;
-     }
-     
-     #lm {
-      filter: brightness(50%);   
-     }
-     
-     #des {
-      filter: brightness(50%);   
-     }
-     
-     #desktop-view {
-        display: flex; 
-         flex-direction: column;
-         position: absolute;
-         top: 50px;
-         width: 90%;
-         height: 80vh;
-         background-color:#FFF;
-         justify-content: center;
-         align-items: center;
-         margin: 0;
-
-     }
-     
-     #desktop-view h4 {
-        color: #535E54; 
-         font-size: 35px;
-         width: 70%;
-         font-family: Georgia, serif;
-         text-align: center;
-         margin-left: 0;
-     }
-     
-     #desktop-view p {
-        color: #535E54;
-         width: 70%;
-         margin-top: 20px;
-         text-align: center;
-     }
-     
-     .training-btn {
-        display: none;   
-     }
-        
- }
-
  }
 
  /* ---------- small phones -----------------*/
@@ -717,4 +540,9 @@
      h4 {
          margin-left: 10px;
      }
+ }
+
+ .logos,
+ logos {
+     background-color: #FFF;
  }
